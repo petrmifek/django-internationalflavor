@@ -6,7 +6,7 @@ import socket
 
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
-from django.utils.six.moves.urllib import request
+from six.moves.urllib import request
 
 from internationalflavor.validators import UpperCaseValueCleaner, _get_check_digit
 from .data import VAT_NUMBER_REGEXES, EU_VAT_AREA
